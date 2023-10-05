@@ -1,0 +1,120 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+}
+
+#chat-window {
+  width: 500px;
+  margin: 0 auto;
+  background-color: skyblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#chat-messages {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  height: calc(100vh - 300px);
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+#chat-form {
+  display: flex;
+  align-items: center;
+}
+
+#patient_input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #f7efe5;
+  color: #674188;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.chatgpt-message {
+  font-family: "Roboto", sans-serif;
+  background-color: #fffbf5; /* different light color */
+  text-align: justify; /* keep it right-aligned */
+  padding: 15px; /* added padding */
+  margin-top: 10px; /* added margin-top to create a gap */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  white-space: pre-line
+}
+
+.patient-message {
+  font-family: "Nunito", sans-serif;
+  background-color: #f7efe5; /* light color */
+  text-align: left; /* changed text align to left */
+  padding: 15px; /* added padding */
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  white-space: pre-line
+}
+.patient-message img,
+.chatgpt-message img {
+  width: 40px; /* adjust the width of the icon */
+  height: 40px; /* adjust the height of the icon */
+  margin-right: 20px; /* add some margin to separate the icon from the message */
+}
+.chatgpt-message img {
+  width: 40px; /* adjust the width of the icon */
+  height: 40px; /* adjust the height of the icon */
+  margin-right: 20px; /* add some margin to separate the icon from the message */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+  #chat-window {
+    width: 90%;
+  }
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: cursive, sans-serif;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-style: italic;
+  width: 100%;
+  background-color: transparent;
+  word-spacing: 1px;
+}
+.title_image
+{
+  width: 65px; /* Adjust the width and height as needed */
+  height: 100px;
+  background-image: url('icons/medicalsymbol.png'); /* Replace 'your-image.png' with the path to your PNG image */
+  margin-right: 40px; /* Add some spacing between the image and the title */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+.status_image
+{
+  width: 65px; /* Adjust the width and height as needed */
+  height: 100px;
+  background-image: url('icons/status.png'); /* Replace 'your-image.png' with the path to your PNG image */
+  margin-left: 40px; /* Add some spacing between the image and the title */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}

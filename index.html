@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doctor AI</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="chat-window">
+      <div class="main-title">
+        <div class="title_image"></div>
+        <p>Doctor<b style="color:red;">AI</b> (Always In)</p>
+        <div class="status_image"></div>
+      </div>
+      <div id="chat-messages"></div>
+      <form id="chat-form">
+        <!-- User to enter the message -->
+        <input
+          type="text"
+          id="patient_input"
+          autocomplete="off"
+          placeholder="Type your message here"
+          required
+        />
+        <button type="submit" id="ask-button">Ask</button>
+      </form>
+    </div>
+    <!-- required to call chatgpt API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="docai_library.js"></script>
+    <script src="doctorai.js"></script>
+  </body>
+</html>
